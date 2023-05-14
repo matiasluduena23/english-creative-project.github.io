@@ -1,0 +1,59 @@
+
+.content-header {
+    background: $bg-color;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.home-title {
+    text-align: center;
+    padding-top: 2rem;
+   
+    span {
+        color: $primary;
+    }
+}
+
+.video {
+    padding: 2rem 0;
+
+    &-img {
+        border-radius: 20px;
+    }
+}
+
+.btn-primary {
+    text-align: center;
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: $primary;
+    color: $bg-color;
+    border-radius: 30px;
+    font-weight: 700;
+
+    &:hover{
+        background: darken($primary, 10);
+    }
+}
+
+
+@media(min-width: 900px){
+
+    .content-text{
+        gap: 3rem;
+    }
+    .home-title{
+        font-size: 4rem;
+        padding-top: 4rem;
+    }
+
+    .video{
+        padding: 3rem;
+    }
+}

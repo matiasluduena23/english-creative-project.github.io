@@ -32,11 +32,19 @@
 .nav-link {
   color: #f4ece0;
   text-transform: uppercase;
+
+  &:hover {
+    color: darken($bg-color, 10);
+  }
 }
 
 .hero {
   background: #f4ece0;
   padding: 4rem;
+}
+
+.logo-img {
+  width: 180px;
 }
 
 @media(max-width: 900px){
