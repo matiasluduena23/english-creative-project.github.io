@@ -7,39 +7,106 @@
   <title>English Creative</title>
 <script defer src="bundle.js"></script></head>
 <body>
-  <header id="header">
-    <nav id="navbar">
-      <div class="container row">
-        <div class="logo">
-          <img class="logo-img"  alt="">
-        </div>
-        <ul class="nav-list ">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
-        </ul>
-        <button class="toggle">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
+  <nav id="navbar">
+    <div class="container row">
+      <div class="logo">
+        <img class="logo-img"  alt="">
       </div>
-    </nav>
+      <ul class="nav-list ">
+        <li class="nav-item"><a class="nav-link" href="#header">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <button class="toggle">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </div>
+  </nav>
+  <header id="header">
     <main class="content-header ">
       <div class="content-text container">
         <h1 class="home-title title"> Experience  a new way to grow with <span>your brand</span></h1>
         <p class="lead">English Creative is about learn english with powerful couching </p>
         <a href="#services" class="btn-primary">Try it!</a>
       </div>
-      
       <div class="video container">
-        <img class="video-img" alt="">
+        <img class="video-img" alt="home-video">
       </div>
-      
     </main>
   </header>
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <div class="container">
+      <h1 class="testimonials-title title">Testimonials</h1>
+      <main class="wrap-testimonials">
+        <div class="card">
+          <div class="card-p">
+            “I love the way Janelle make the class and the fast I improve my English. She help me a lot with my software carrer”   
+          </div>
+          <div class="card-img"><img class="card-img-1" alt="testimonial-image"></div>
+          <div class="card-title">
+            <h2>Matias Ludueña </h2>
+            <p>web developer</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-p">
+            “I love the way Janelle make the class and the fast I improve my English. She help me a lot with my software carrer”
+          </div>
+          <div class="card-img"><img class="card-img-2" alt="testimonial-image"></div>
+          <div class="card-title">
+            <h2>Antonella Rodriguez</h2>
+            <p>QA tester</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-p">
+            “I love the way Janelle make the class and the fast I improve my English. She help me a lot with my software carrer”
+          </div>
+          <div class="card-img"><img class="card-img-3" alt="testimonial-image"></div>
+          <div class="card-title">
+            <h2>Natalia Rocca</h2>
+            <p>Photographer</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+  <!-- contact -->
+  <section id="contact">
+    <div class="container">
+      <h1 class="contact-title title">Get in touch</h1>
+      <main class="wrap-contact">
+        <form  class="form">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-input" name="name" id="">
+          <label for="name" class="form-label">Phone</label>
+          <input type="number" name="number" class="form-input" id="">
+          <label for="name" class="form-label">Email</label>
+          <input type="email" name="email" class="form-input" id="">
+          <label for="message" class="form-label">Message</label>
+          <textarea name="" class="form-text-area" cols="30" rows="10"></textarea>
+          <button class="btn-contact">Send</button>
+        </form>
+        <div class="contact-info">
+          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, pariatur tenetur? Dolorem voluptates ipsum voluptas.</p>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, mollitia!</p>
+          <div class="logo">
+            <img class="contact-logo" alt="contact-logo-img">
+          </div>
+        </div>
+      </main>
+      <div class="botton-line"> </div>
+      <footer id="footer">
+        <p class="footer-p">&copy; 2023 English Creative All rights reserved</p>
+        <p class="footer-p">Created by <a href="#">Matias Ludueña</a></p>
+      </footer>
+    </div>
+  </section>
 
 </body>
 </html>
