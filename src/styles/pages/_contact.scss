@@ -1,0 +1,115 @@
+
+#contact {
+    background: $primary;
+    color: $bg-color;
+    padding-top: 2rem;
+}
+
+
+.wrap-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.form-text-area,
+.form-input {
+    display: block;
+    background: $primary;
+    border: lighten($primary, 20) solid 2px;
+    width: 100%;
+    border-radius: 3px;
+
+    &:focus{
+         background: lighten($primary, 2);
+        border: lighten($primary, 30) solid 2px !important;
+        outline: none;
+    }
+}
+
+.form-input {
+    padding: 0.3rem;
+}
+
+.form-text-area{
+ margin-bottom: 1rem
+}
+
+.btn-contact {
+    @include btn;
+    color: $primary;
+    background: $bg-color;
+    border: $primary solid 1px;
+
+    &:hover {
+        background: $primary;
+        color: $bg-color;
+        border: $bg-color solid 1px;
+    }
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+    .logo {
+        width: 220px;
+        // height: 100px; 
+        margin: 0 auto; 
+        }
+
+    p {
+        text-align: start;
+    }
+
+}
+
+.botton-line {
+    background: $bg-color;
+    height: 2px;
+    width: 100%;
+    margin: 1rem 0;
+    
+}
+
+.footer-p {
+    font-size: 12px;
+    font-family: $font-secondary;
+    padding: 0.5rem 0 2rem 0;
+    
+    a{
+        color: black;
+    }
+}
+
+@media(min-width: 900px){
+    .wrap-contact {
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .form,
+    .contact-info {
+     width: 50%;
+     
+    }
+
+    .contact-title{
+        font-size: 3rem;
+    }
+    #footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

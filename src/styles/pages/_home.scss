@@ -9,6 +9,10 @@
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+
+    p{
+        font-size: 1.5rem;
+    }
 }
 
 .home-title {
@@ -16,12 +20,13 @@
     padding-top: 2rem;
    
     span {
-        color: $primary;
+        color: darken($primary, 10);
     }
 }
 
 .video {
-    padding: 2rem 0;
+    padding: 2rem;
+    width: 80%;
 
     &-img {
         border-radius: 20px;
@@ -29,13 +34,10 @@
 }
 
 .btn-primary {
-    text-align: center;
-    display: inline-block;
-    padding: 1rem 2rem;
+     @include btn;
     background: $primary;
     color: $bg-color;
-    border-radius: 30px;
-    font-weight: 700;
+    
 
     &:hover{
         background: darken($primary, 10);
@@ -44,16 +46,16 @@
 
 
 @media(min-width: 900px){
-
     .content-text{
         gap: 3rem;
     }
     .home-title{
-        font-size: 4rem;
+        font-size: 5rem;
         padding-top: 4rem;
     }
 
     .video{
         padding: 3rem;
+        width: 60%;
     }
 }

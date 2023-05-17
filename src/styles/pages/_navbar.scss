@@ -1,22 +1,33 @@
 #navbar {
-  background:  hsl(2, 99%, 65%);
+  background:  $bg-color;
   height: 60px;
-
+  position: sticky;
+  top: 0;
+  transition: all .5s ease-in-out;
   .row {
     height: 100%;
+  }
+}
+
+#navbar.sticking {
+  background:  darken($bg-color,10);
+
+  .toggle {
+    background:  darken($bg-color,10);
   }
 }
 
 .toggle {
   display: none;
   border: 0;
-  background:  $primary;
+  background: $bg-color;
   cursor: pointer; 
+  transition: all .5s ease-in-out;
 }
 
 .line {
   display: block;
-  background: #f4ece0;
+  background: $primary;
   height: 3px;
   width: 2rem;
   margin: 6px auto;
@@ -30,11 +41,11 @@
 }
 
 .nav-link {
-  color: #f4ece0;
+  color: #333;
   text-transform: uppercase;
 
   &:hover {
-    color: darken($bg-color, 10);
+    color: $primary;
   }
 }
 
@@ -65,6 +76,14 @@
     transition: all .6s ease-in-out;
   }
  
+  .nav-link {
+    color: #333;
+    text-transform: uppercase;
+  
+    &:hover {
+      color: lighten(#333, 20);
+    }
+  }
   .nav-item {
     margin: 20px 0;
   }

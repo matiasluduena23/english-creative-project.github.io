@@ -46,8 +46,11 @@ img {
 }
 
 .title {
+  font-family: $font-secondary;
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 3.3rem;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .lead {
